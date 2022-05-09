@@ -23,4 +23,4 @@ To run this web application:
 
 <br>
 
-## [Pull Request Link](https://github.com/emad-almajdalawi/django-snacks/pulls/1)
+## [Pull Request Link](https://github.com/emad-almajdalawi/django-snacks/pull/1)
