@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block content %}
+We are happy to hear from you!
+</br>
+Do not hisitate contact us by the following 
+{% endblock %}
+
+{% block body %}
+<form>
+    <label for="name" Style = 'font-size: 1.5vw'>Name:</label><br>
+    <input type="text" id="Name" name="Name"><br>
+    <label for="Message" Style = 'font-size: 1.5vw'>Message:</label><br>
+    <textarea name="Message" rows="10" cols="50"></textarea>
+</form>
+</br>
+<button type="button">Submit</button>
+</br>
+{% endblock %}
