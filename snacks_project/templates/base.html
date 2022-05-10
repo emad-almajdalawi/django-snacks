@@ -8,17 +8,19 @@
 </head>
 <style>
     button {padding: 1vw 1.5vw; stroke-width: 0.25vw; background-color:#8DB596; border: black; border-radius: 1vw; transition-duration: 0.4s; box-shadow: 0 0.8vw 1.6vw 0 rgba(0,0,0,0.2), 0 0.6vw 2vw 0 rgba(0,0,0,0.19);}
-    button:hover {background-color: #4CAF50; box-shadow: 0 1.2vw 1.6vw 0 rgba(0,0,0,0.24), 0 1.7vw 5vw 0 rgba(0,0,0,0.19);}
+    button:hover {background-color: #4CAF50; box-shadow: 0 1.2vw 1.6vw 0 black, 0 1.7vw 5vw 0 black;}
 </style>
 <body style = 'background-color:#0D1117; font-size: 2vw; color: white;'>
     <header style = 'background-color:#161B22;  display: grid; grid-template-columns: 1.25fr 3fr; justify-content: space-between; text-align: center;'>
         <div>
             <h1>Django Snacks</h1>
         </div>
-        <nav style = 'display: flex; justify-content: space-around; align-items: center;'>
-            <a href="/"><button type="button" style= 'font-size: 2.2vw;'>HOME</button></a>
-            <a href="/about"><button type="button" style= 'font-size: 2.2vw;'>ABOUT</button></a>
-            <a href="/contact"><button type="button" style= 'font-size: 2.2vw;'>CONTACT</button></a>
+        <nav>
+            <ul style = 'display: flex; justify-content: space-around; align-items: center;'>
+                <a href={% url 'home' %}><button type="button" style= 'font-size: 2.2vw;'>HOME</button></a>
+                <a href={% url 'about' %}><button type="button" style= 'font-size: 2.2vw;'>ABOUT</button></a>
+                <a href={% url 'contact' %}><button type="button" style= 'font-size: 2.2vw;'>CONTACT</button></a>
+            </ul>
         </nav>
     </header>
     </br>
